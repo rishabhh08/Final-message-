@@ -1,131 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Jaan</title>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-<style>
-    body { background-color: #ffe4e6; font-family: 'Quicksand', sans-serif; text-align: center; padding: 20px; overflow-x: hidden; }
-    .heart { position: fixed; font-size: 20px; animation: float 5s linear infinite; z-index: -1; }
-    @keyframes float { 0% { transform: translateY(100vh); } 100% { transform: translateY(-10vh); } }
-    .box { background: #ffc0cb; padding: 20px; border-radius: 25px; margin: 20px auto; width: 90%; border: 4px solid #fff; display: none; }
-    .box.active { display: block; }
-    .btn { background: white; border: none; padding: 12px 24px; border-radius: 20px; font-weight: bold; cursor: pointer; color: #ff6b6b; margin: 10px; font-size: 14px; }
-    img { width: 100%; border-radius: 15px; margin: 10px 0; }
-    .text { font-weight: bold; font-size: 14px; color: #555; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Jaan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #ffe4e6; font-family: 'Quicksand', sans-serif; text-align: center; padding: 20px; overflow-x: hidden; }
+        .heart { position: fixed; font-size: 20px; animation: float 5s linear infinite; z-index: -1; }
+        @keyframes float { 0% { transform: translateY(100vh); } 100% { transform: translateY(-10vh); } }
+        .box { background: #ffc0cb; padding: 25px; border-radius: 30px; margin: 20px auto; width: 90%; display: none; border: 4px solid #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .active { display: block; }
+        .btn { background: white; border: none; padding: 12px 25px; border-radius: 20px; font-weight: bold; color: #ff6b6b; cursor: pointer; margin-top: 15px; font-size: 16px; }
+        img { width: 100%; border-radius: 20px; margin: 10px 0; }
+        b { font-size: 16px; color: #444; line-height: 1.5; display: block; margin-bottom: 10px; }
+    </style>
 </head>
 <body>
 
 <div id="hearts"></div>
-<audio id="mysong" loop><source src="Theher Ja(KoshalWorld.Com).mp3" type="audio/mpeg"></audio>
+<audio id="mySong"><source src="song.mp3" type="audio/mpeg"></audio>
 
 <div id="p0" class="box active">
-    <button class="btn" onclick="document.getElementById('mySong').play(); show('p1')">Play</button>
+    <button class="btn" onclick="document.getElementById('mySong').play(); show('p1')">Play for my Jaan ❤️</button>
 </div>
 
 <div id="p1" class="box">
-    <img src="9e61eb08ea2f88411f65ee783e223e9a.jpg">
-    <p class="text"><b>Hello Meri jaan</b></p>
+    <img src="cat.jpg">
+    <b>Hello Meri jaan</b>
     <button class="btn" onclick="show('p2')">Hanjii Rishuuu</button>
 </div>
 
 <div id="p2" class="box">
-    <p class="text"><b>Kinda sucks that I never really got to do anything for you, and honestly that hurts. But at the same time, I'm glad that, even if it was just for a little while, you were a part of my life 🖤</b></p>
-    <img src="DANCING_HEART_GIF.gif">
-    <img src="GRAFFITI_GIF.gif">
+    <b>Kinda sucks that I never really got to do anything for you, and honestly that hurts. But at the same time, I'm glad that, even if it was just for a little while, you were a part of my life 🖤</b>
     <button class="btn" onclick="show('p3')">Next</button>
 </div>
 
 <div id="p3" class="box">
-    <p class="text"><b>You always say I never liked seeing you happy. Well, maybe it's finally time for me to let you be happy</b></p>
-    <img src="LOVE_GIFT_GIF.gif">
-    <img src="GRAFFITI_GIF.gif">
+    <b>You always say I never liked seeing you happy. Well, maybe it's finally time for me to let you be happy</b>
     <button class="btn" onclick="show('p4')">Next</button>
 </div>
 
 <div id="p4" class="box">
-    <p class="text"><b>idc you love me or not but but but I love uhhh alot</b></p>
-    <img src="PHOTO_1.jpg">
-    <img src="FLOWER_GIF.gif">
+    <b>idc you love me or not but but but I love uhhh alot</b>
+    <img src="photo1.jpg">
     <button class="btn" onclick="show('p5')">Next</button>
 </div>
 
 <div id="p5" class="box">
-    <p class="text"><b>And tbh, I changed a lot of myself for you. And you know how you always say I deserved better? The truth is, I love you so much that I don't even know what 'better' means. All I know is that I feel happiest when I'm with you, and being around you just makes everything feel right.</b></p>
-    <img src="LOVE_GIF.gif">
-    <img src="GRAFFITI_GIF.gif">
+    <b>And tbh, I changed a lot of myself for you. And you know how you always say I deserved better? The truth is, I love you so much that I don't even know what 'better' means. All I know is that I feel happiest when I'm with you, and being around you just makes everything feel right.</b>
     <button class="btn" onclick="show('p6')">Next</button>
 </div>
 
 <div id="p6" class="box">
-    <p class="text"><b>Ngl, idk if you even got feelings for me anymore. Seeing your following list and all, it lowkey feels like you don't. But when I think about everything you did for me, it's actually crazy. You stayed and put up with a guy who was too scared to even hop on a call or VC. Not everyone would've had that much patience</b></p>
+    <b>Ngl, idk if you even got feelings for me anymore. Seeing your following list and all, it lowkey feels like you don't. But when I think about everything you did for me, it's actually crazy. You stayed and put up with a guy who was too scared to even hop on a call or VC. Not everyone would've had that much patience.</b>
     <button class="btn" onclick="show('p7')">Next</button>
 </div>
 
 <div id="p7" class="box">
-    <p class="text"><b>So if you've moved on, I can't even blame you for that. Like, genuinely. I just want you to be happy. Most people would've kept bringing up my flaws, made me feel like shit, and dipped a long time ago. You didn't or tumhari kamiya to hamesha nikalunga esa to nhi? Khubi bohot he tumme bolunga sar pe chadh jaogi</b></p>
+    <b>So if you've moved on, I can't even blame you for that. Like, genuinely. I just want you to be happy. Most people would've kept bringing up my flaws, made me feel like shit, and dipped a long time ago. You didn't. Aur tumhari kamiya to hamesha nikalunga esa to nhi? Khubi bohot he tumme, bolunga toh sar pe chadh jaogi!</b>
     <button class="btn" onclick="show('p8')">Next</button>
 </div>
 
 <div id="p8" class="box">
-    <p class="text"><b>Keeping a relationship alive through basss texts only was hard asf. I tried, but sometimes trying isn't enough. And honestly, thank you for loving me for two years despite all that. Real talk, I don't even think I deserved half the effort you put in</b></p>
+    <b>Keeping a relationship alive through basss texts only was hard asf. I tried, but sometimes trying isn't enough. And honestly, thank you for loving me for two years despite all that. Real talk, I don't even think I deserved half the effort you put in.</b>
     <button class="btn" onclick="show('p9')">Next</button>
 </div>
 
 <div id="p9" class="box">
-    <p class="text"><b>I could sit here and talk about my flaws all day, but you've got way more good in you than you'll ever realize. I just hope you're happy, with or without me. And please learn to take care of yourself too. You're gonna have to stop depending on other people for that one day. You'll be okay. ❤️</b></p>
+    <b>I could sit here and talk about my flaws all day, but you've got way more good in you than you'll ever realize. I just hope you're happy, with or without me. And please learn to take care of yourself too. You're gonna have to stop depending on other people for that one day. You'll be okay. ❤️</b>
     <button class="btn" onclick="show('p10')">Next</button>
 </div>
 
 <div id="p10" class="box">
-    <p class="text"><b>And yeah, I know I wasn't exactly an easy person to love either. I had way too many walls up, way too many things holding me back. You deserved way more than what I was able to give, and somehow you still stayed. That's lowkey something I'll always respect about you. No matter how things ended up, nobody can tell me what you felt wasn't real, 'cause I saw the effort, and that kinda stuff is rare these days</b></p>
+    <b>And yeah, I know I wasn't exactly an easy person to love either. I had way too many walls up. You deserved way more than what I was able to give, and somehow you still stayed. That's lowkey something I'll always respect about you. No matter how things ended up, nobody can tell me what you felt wasn't real.</b>
     <button class="btn" onclick="show('p11')">Next</button>
 </div>
 
 <div id="p11" class="box">
-    <p class="text"><b>Also, don't ever feel like you owe me anything or gotta carry some guilt because of us. You don't. If life got better after me, then that's honestly what I wanted for you anyway. Keep chasing your goals, keep being that insanely caring person, and don't let people take that softness away from you. We might not be each other's person anymore, but I'll always be grateful our paths crossed. You were genuinely one of a kind. 🤍✨</b></p>
+    <b>Also, don't ever feel like you owe me anything or gotta carry some guilt because of us. You don't. Keep chasing your goals, keep being that insanely caring person. We might not be each other's person anymore, but I'll always be grateful our paths crossed. You were genuinely one of a kind. 🤍✨</b>
     <button class="btn" onclick="show('p12')">Next</button>
 </div>
 
 <div id="p12" class="box">
-    <p class="text"><b>Bro you got that one energy I can’t even hate if I tried yk what I mean like I don’t even feel like moving on or finding someone else to settle with everything just feels stuck on you and that thing you used to say like nobody waits nobody stays someone better always comes along but what if that never hits for me what if I never feel that same way for anyone else after you now I’m out here thinking I should just act like a playboy but kya hoga agar mujhe bc feeling hi nhi aya?? Kisike liye ab bologi ha ladkiyo se muh marke bol rhe just kidding 👄</b></p>
+    <b>Bro you got that one energy I can’t even hate if I tried. Everything feels stuck on you. What if I never feel that same way for anyone else after you? Now I’m out here thinking I should just act like a playboy but kya hoga agar mujhe bc feeling hi nhi aya?? Just kidding 👄</b>
     <button class="btn" onclick="show('p13')">Next</button>
 </div>
 
 <div id="p13" class="box">
-    <p class="text"><b>hamesha burai nahi karunga bas tumhare samne react krta hu ha wo main tumhare type ka nhi hu na sensitive hu to mtlb ho jata hai to main bura keh deta hu lekin koi or bolega I'll always ready to protect you my love</b></p>
+    <b>Hamesha burai nahi karunga bas tumhare samne react krta hu. Main tumhare type ka nhi hu na sensitive hu, toh bura keh deta hu. Lekin koi or bolega, I'll always be ready to protect you my love.</b>
     <button class="btn" onclick="show('p14')">Next</button>
 </div>
 
 <div id="p14" class="box">
-    <p class="text"><b>I hope you find someone who gets you the way I did I hope you find someone you can talk to every single day I hope you find someone who is not scared like me to call or do vc I hope you find someone who does not blame you and only gives you love I hope you find someone who acts all sigma in front of everyone but turns into a total pookie only for you</b></p>
+    <b>I hope you find someone who acts all sigma in front of everyone but turns into a total pookie only for you. I hope you find someone who is not scared like me to call or do vc.</b>
     <button class="btn" onclick="show('p15')">Next</button>
 </div>
 
 <div id="p15" class="box">
-    <p class="text"><b>I always say I’m leaving and never coming back but who even knows my heart might not agree this time still I’m not coming back I’m not gonna stop you from moving on but if your heart ever tells you Naira that I’m the right one for you or you need me just come back I don’t even know if you’re mine or not but I’ll always be yours and don’t think that just because we don’t have a relationship right now you can’t share your pain with me trust me just tell me everything tell me it I like hearing it</b></p>
+    <b>I always say I’m leaving but who knows my heart might not agree. I’m not gonna stop you from moving on. But if your heart ever tells you, Naira, that I’m the right one, just come back. I don't know if you're mine, but I'll always be yours.</b>
     <button class="btn" onclick="show('p16')">Next</button>
 </div>
 
 <div id="p16" class="box">
-    <p class="text"><b>maine tumhe jo dekha tha pehli baar tabse pyar hua tumhe to pta he 50 baar keh chuka hu wo 24 mahina 730 din 17,520 ghante 1,051,200 minute aur 63,072,000 seconds ye jo time he kabhi esa feel nhi hua ki mujhe kisi or ki jarurat he maa kasam tum mere liye hamesha kafi rhi ( aage bhi reh jaogi kafi tumhari memories bada pyara hai tum meri ek dam greatest love ho ek dam dream love delulu pyar</b></p>
+    <b>Maine tumhe jo dekha tha pehli baar tabse pyar hua. 24 mahina, 730 din, 17,520 ghante... tum mere liye hamesha kafi rahi. Tum meri greatest love ho, dream love, delulu pyar.</b>
     <button class="btn" onclick="show('p17')">Next</button>
 </div>
 
 <div id="p17" class="box">
-    <p class="text"><b>Iske bad main wait krunga but tumhe pta tak lagne nhi dunga wait he wo ab kahani ko filmy banne do ki agar meri kismat me hogi to khud Chalke ayegi or last baat main kabhi thik nhi ho paunga ab hamesha mere andar ek reh jayega ki tum meri nhi Rahi or last tumhari following list bohot chubhta hai mujhe sala</b></p>
-    <button class="btn" onclick="show('p18')">Next</button>
+    <b>Iske bad main wait krunga but tumhe pta tak lagne nhi dunga. Agar meri kismat me hogi to khud Chalke ayegi. Last baat, tumhari following list bohot chubhta hai mujhe.</b>
+    <img src="photo2.jpg">
+    <button class="btn" onclick="show('p18')">Final click</button>
 </div>
 
 <div id="p18" class="box">
-    <img src="IMG_20260610_143936_839.webp">
-    <button class="btn" onclick="show('p19')">Next</button>
-</div>
-
-<div id="p19" class="box">
-    <img src="IMG_20260610_144039_128.webp">
+    <img src="photo3.jpg">
+    <b>Love you forever ❤️</b>
 </div>
 
 <script>
@@ -134,12 +124,12 @@
         document.getElementById(id).classList.add('active');
     }
     for(let i=0; i<15; i++) {
-        let h = document.createElement('div');
-        h.innerHTML = '❤️'; h.className = 'heart';
-        h.style.left = Math.random() * 100 + 'vw';
-        h.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        document.getElementById('hearts').appendChild(h);
+        let h = document.createElement('div'); h.innerHTML = '❤️'; h.className = 'heart';
+        h.style.left = Math.random() * 95 + 'vw';
+        h.style.animationDuration = (Math.random() * 4 + 3) + 's';
+        document.body.appendChild(h);
     }
 </script>
 </body>
-</html>
+    </html>
+    
